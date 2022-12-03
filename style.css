@@ -27,3 +27,34 @@ main .cards {
   position: relative;
   transition: all 0.3s ease;
 }
+
+.cards.active {
+  background-color: #eae9f2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cards.active::before {
+  content: "\f086";
+  font-family: "Font Awesome 6 Free";
+  color: #857ea6;
+  font-size: 8rem;
+  position: absolute;
+  opacity: 0.2;
+  top: -35px;
+  left: -20px;
+  z-index: 0;
+}
+
+.cards .title {
+  font-size: 1.3rem;
+}
+
+.cards .answer {
+  display: none;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+}
+
+.cards.active .answer {
+  display: block;
+}

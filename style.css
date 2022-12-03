@@ -58,3 +58,32 @@ main .cards {
 .cards.active .answer {
   display: block;
 }
+
+.cards button {
+  background: transparent;
+  border: 1px solid #645a91;
+  border-radius: 5px;
+  color: #645a91;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 99;
+  max-width: fit-content;
+  margin-left: 4rem;
+  max-height: 2rem;
+}
+
+.cards button .fa-xmark {
+  display: none;
+}
+
+.cards.active button .fa-xmark {
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.18rem;
+}
+
+.cards.active button .fa-chevron-down {
+  display: none;
+}

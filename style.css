@@ -1,5 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
 
 body {
-  font-family: "Roboto";
+  font-family: "Muli", serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #f2f1e9;
+}
+
+h1 {
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main .cards {
+  display: grid;
+  grid-template: auto / 4fr 1fr;
+  background-color: transparent;
+  border: 1px solid hsl(49, 13%, 70%);
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
 }
